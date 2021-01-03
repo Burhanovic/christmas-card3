@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="./images/404.png" alt="" width="130"/></a>
+        </div>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="aboutus.html"><li>About us</li></a>
+                <a href="contactus.html"><li>Contact us</li></a>
+            </ul>
+        </nav>
+    </div>
+
+    <h2>Lets choose an image first!</h2>
+    <div id="img-container">
+        <img class="img-choice" src="https://picsum.photos/200/300?random=1">
+        <img class="img-choice" src="https://picsum.photos/200/300?random=2">
+        <img class="img-choice" src="https://picsum.photos/200/300?random=3">
+        <img class="img-choice" src="https://picsum.photos/200/300?random=4">
+        <img class="img-choice" src="https://picsum.photos/200/300?random=5">
+        <br>
+        <img class="img-choice" src="https://picsum.photos/200/300?random=6">
+        <img class="img-choice" src="https://picsum.photos/200/300?random=7">
+        <img class="img-choice" src="https://picsum.photos/200/300?random=8">
+        <img class="img-choice" src="https://picsum.photos/200/300?random=9">
+        <img class="img-choice" src="https://picsum.photos/200/300?random=10">
+
+    </div>
+
+    <label for="front-message">Write front message:</label>
+    <textarea name="front-message" id="front-message" placeholder="Your message..."></textarea>
+    <br>
+    <div id="your-preview">
+        <h3 id="your-preview">Here is a preview of your card!</h3>
+        <div id="front-preview-container">
+            <p id="front-message-preview"></p>
+        </div>
+    </div>
+    <h2>Now lets create the back of your card!</h2>
+
+    <section id="viewport3">
+        <div id="back-form">
+            <label for="from">From:</label>
+            <input type="text" name="from" id="from" placeholder="Sender">
+
+            <label for="to">To:</label>
+            <input type="text" name="to" id="to" placeholder="Recepient">
+
+            <label for="back-message">Write your message:</label>
+            <textarea name="back-message" id="back-message" placeholder="Your message..."></textarea>
+        </div>
+        <div id="back-preview">
+            <h2 id="your-preview-2">Your preview will be here:</h2>
+            <div id="back-preview-container">
+                <div id="left-side">
+                    <p id="back-message-preview"></p>
+                </div>
+
+                <div id="right-side">
+                    <h3>From:</h3>
+                    <div id="sender"></div>
+                    <br>
+                    <h3>To:</h3>
+                    <div id="recepient"></div>
+                </div>
+            </div>
+        </div>
+        <a id="submit-btn" class="main-btn" href="result.html" onclick="generateCard()">Make my postcard!</a>
+
+    </section>
+
+
+
+
+
+    <div class="footer">
+        <div>
+            <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="aboutus.html"><li>About us</li></a>
+            <a href="contactus.html"><li>Contact us</li></a>
+            <a href="impressum.html"><li>Impressum</li></a>
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
